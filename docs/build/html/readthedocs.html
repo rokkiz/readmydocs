@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hướng dẫn sử dụng Git và Github cơ bản &mdash; mydocs 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="mydocs 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="License" href="licence.html"/>
+        <link rel="prev" title="Rokkiz’s Blog: Here is all my mess" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> mydocs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hướng dẫn sử dụng Git và Github cơ bản</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licence.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mydocs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Hướng dẫn sử dụng Git và Github cơ bản</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Readthedocs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="huong-dan-su-dung-git-va-github-co-ban">
+<h1>Hướng dẫn sử dụng Git và Github cơ bản<a class="headerlink" href="#huong-dan-su-dung-git-va-github-co-ban" title="Permalink to this headline">¶</a></h1>
+<p><strong>26/08/2016`*KHÔNG CÓ PHẢN
+HỒI* &lt;https://lucngoc.com/hoc-tap/huong-dan-su-dung-git-va-github/#respond&gt;`__</strong></p>
+<p>Git và Github được sử dụng khá phổ biến trong giới lập trình viên, chắc
+hẳn bạn sẽ thấy nhiều đường kho mã nguồn có link từ Github.com.&nbsp;Nó rất
+tiện lợi và an toàn, đáp ứng tốt các nhu cầu làm việc nhóm. Để sử dụng
+Git và Github bạn cần có những kiến thức cơ bản dòng lệnh trên Linux (vì
+cơ bản Git được xây dựng trên Linux).</p>
+<p><a class="reference internal" href="media/image1.jpeg"><img alt="it" src="media/image1.jpeg" style="width: 5.20694in; height: 2.27014in;" /></a></p>
+<p>GIT LÀ GÌ?</p>
+<p>Git là một hệ thống quản lý phiên bản phân tán (Distributed Version
+Control System – DVCS). Bạn có thể hình dung&nbsp;như thế này, có hai anh A
+và anh B cùng làm việc chung một dự án, mỗi người code một phần, hàng
+ngày họ dùng Git để đẩy (commit) phần việc đã hoàn thành của mình lên
+một kho mã nguồn chung (repository),&nbsp;từ kho chung này, họ có thể tải về
+phần làm việc của đối phương về máy tính cá nhân của mình để làm chung.
+Hệ thống này&nbsp;lưu lại mỗi lần thay đổi thành những phiên bản khác nhau để
+quản lý và tiện cho việc người dùng muốn khôi phục lại.</p>
+<p>GITHUB LÀ GÌ?</p>
+<p>Trong phần giới thiệu về Git, mình có nhắc đến các&nbsp;kho mã
+nguồn&nbsp;repository, Github là một hệ thống máy chủ dành riêng để chứa các
+kho này, các repository trên Github được gọi là remote repository. Như
+vậy, bạn có thể thấy rất rõ ràng&nbsp;sự khác nhau&nbsp;Git là một mô hình hệ
+thống còn Github là hệ thống máy chủ. Tất nhiên có nhiều dịch vụ giống
+như Github, nhưng trong khuôn khổ bài viết này, chúng ta sẽ chỉ làm việc
+với Github mà thôi.</p>
+<p>Truy cập&nbsp;<a class="reference external" href="https://github.com/join">**https://github.com/join**</a>&nbsp;để
+tạo tài khoản nếu bạn chưa có.</p>
+<p>BẮT ĐẦU LÀM VIỆC</p>
+<p>Trong bài viết này, mình xin hướng demo sử dụng Git và Github trên máy
+tính chạy Windows 10.&nbsp;Để chuẩn bị làm việc bạn cầtải Git về máy và cài
+đặt, link
+tải&nbsp;<a class="reference external" href="https://git-scm.com/downloads">**https://git-scm.com/downloads**</a>,
+việc cài đặt không có gì lưu ý đặc biệt, bạn cứ để các tùy chọn mặc định
+và tiền hành &nbsp;cài đặt bình thường.</p>
+<p>Cấu hình Git cơ bản sau khi cài đặt, mở Git Bash và gõ.</p>
+<div class="line-block">
+<div class="line">$&nbsp;git config –global user.name “your_name”</div>
+<div class="line">$&nbsp;git config –global user.email “<a class="reference external" href="mailto:your_email&#37;&#52;&#48;youremail&#46;com">your_email<span>&#64;</span>youremail<span>&#46;</span>com</a>”</div>
+</div>
+<p>Nhớ thay tên và email của bạn vào nhé, Git sẽ sử dụng các thông tin này
+khi bạn tham gia vào các dự án.</p>
+<p>TẠO REPOSITORY REMOTE TRÊN GITHUB</p>
+<p>Đăng nhập vào Github trên trình duyệt,&nbsp;&nbsp;nhấn vào dấu + và
+chọn&nbsp;<strong>New&nbsp;repository</strong></p>
+<p><a class="reference internal" href="media/image2.png"><img alt="it-02" src="media/image2.png" style="width: 6.57639in; height: 2.48780in;" /></a></p>
+<p>Điền các thông tin cần thiết và nhấn&nbsp;<strong>Create Repository</strong>&nbsp;để tạo một
+repository mới:</p>
+<p><a class="reference internal" href="media/image3.png"><img alt="it-03" src="media/image3.png" style="width: 6.47898in; height: 5.20556in;" /></a></p>
+<p>Bạn sẽ thu được&nbsp;link của remote repository vừa tạo, link này có
+dạng&nbsp;<strong>https://github.com/user-name/repository-name</strong>, trong demo của
+mình là&nbsp;<a class="reference external" href="https://github.com/lucngoc/Git.git">https://github.com/lucngoc/Git.git</a>.</p>
+<p>TẠO LOCAL REPOSITORY</p>
+<p>Chúng ta đã tạo ra một repository trên Github, nhưng phần lớn công việc
+bạn đều làm trên máy tính của mình, do đó bạn cần phải tạo một local
+repository và kết nối chúng lại với nhau.</p>
+<p>Dùng Windows Explorer mở thư mục chứa dự án bạn đang code trên máy, nhấn
+chuột trái vào vùng trống và chọn&nbsp;<strong>Git Bash Here</strong>.</p>
+<p>Gõ lệnh&nbsp;<strong>$ git init</strong>&nbsp;để khởi tạo một&nbsp;repository trong thư mục đó
+(init là viết tắt của initialize).&nbsp;Lúc này một thư mục Git đã được tạo
+ra nhưng nó là thư mục ẩn nên bạn không thể nhìn thấy được.</p>
+<div class="line-block">
+<div class="line">$ git init</div>
+<div class="line">Initialized empty Git repository in /.git/</div>
+</div>
+<p>KẾT NỐI LOCAL REPOSITORY VÀ REMOTE&nbsp;REPOSITORY TRÊN GITHUB</p>
+<p>Repository trên Github được coi là remote repository và để kết nối với
+Local Repository bạn dùng lệnh:</p>
+<p>$ git remote add origin <a class="reference external" href="https://github.com/user-name/repository-name.git">https://github.com/user-name/repository-name.git</a></p>
+<p>Để kiểm tra lại remote repository bạn đã add, gõ lệnh&nbsp;<strong>$&nbsp;git remote
+-v</strong></p>
+<div class="line-block">
+<div class="line">$ git remote -v</div>
+<div class="line">origin <a class="reference external" href="https://github.com/lucngoc/Git.git">https://github.com/lucngoc/Git.git</a> (fetch)</div>
+<div class="line">origin <a class="reference external" href="https://github.com/lucngoc/Git.git">https://github.com/lucngoc/Git.git</a> (push)</div>
+</div>
+<p>Trong dòng kết quả,&nbsp;<strong>origin</strong>&nbsp;là tên của remote repository được đặt
+mặc định, bạn có thể đổi tên này bằng lệnh&nbsp;<strong>$&nbsp;git remote rename
+origin new_name</strong>, việc này có ích nếu như bạn có nhiều remote
+repository trong dự án.</p>
+<p>ĐƯA FILE VÀO REPOSITORY</p>
+<p><strong>Quy trình người dùng đưa&nbsp;tập tin vào Repository.</strong></p>
+<p><a class="reference internal" href="media/image4.png"><img alt="it-07" src="media/image4.png" style="width: 6.21319in; height: 3.58853in;" /></a></p>
+<p><strong>Giai đoạn 1:</strong>&nbsp;Các tập tin trong dự án của bạn đã nằm trong thư mục
+Local Repository mà bạn đã dùng lệnh&nbsp;<strong>$&nbsp;git init</strong>&nbsp;để tạo ở trên. Tuy
+nhiên chúng vẫn chưa được&nbsp;<strong>track</strong>,&nbsp;để đưa chúng vào trạng
+thái&nbsp;<strong>track</strong>&nbsp;bạn dùng lệnh&nbsp;sử dụng lệnh&nbsp;<strong>$&nbsp;git add
+file_name</strong>&nbsp;(sử dụng&nbsp;<strong>$&nbsp;git add *</strong>&nbsp;để đưa toàn bộ các file trong
+thư mục), lúc này các file sẽ được&nbsp;<strong>đặt trạng thái đã tracked</strong>&nbsp;và
+sẵn sàng&nbsp;<strong>commit</strong>&nbsp;(file nằm trong vùng file vào&nbsp;<strong>staging
+area</strong>&nbsp;và sẵn sàng để commit). Dùng lệnh&nbsp;<strong>$</strong>&nbsp;<strong>git status</strong>&nbsp;để kiểm
+tra trạng thái của các file.</p>
+<p>Ví dụ mình có&nbsp;file cat.txt trong thư mục Local Repository:</p>
+<div class="line-block">
+<div class="line">$ git add cat.txt</div>
+<div class="line">$ git status</div>
+<div class="line">On branch master</div>
+<div class="line">Initial commit</div>
+<div class="line">Changes to be committed:</div>
+<div class="line">(use “git rm –cached &lt;file&gt;…” to unstage)</div>
+<div class="line">new file: cat.txt</div>
+</div>
+<p><strong>Giai đoạn 2:</strong>&nbsp;Commit có mục đích là chụp lại (snapshot) các file
+trong staging area và sự thay đổi với phiên bản trước đó nếu có, thông
+tin được lưu lại kèm theo tên email của người commit. Để commit ta sử
+dụng lệnh&nbsp;<strong>$&nbsp;git commit -m “message”</strong>. Message đi kèm lệnh commit
+giúp người dùng có thể dễ dàng nhận biết các lần commit, bạn có thể đặt
+sao cho dễ nhớ.</p>
+<div class="line-block">
+<div class="line">$ git commit -m “Add cat.txt”</div>
+<div class="line">[master 2a6786a] Add cat.txt</div>
+<div class="line">1 file changed, 0 insertions(+), 0 deletions(-)</div>
+<div class="line">create mode 100644 cat.txt</div>
+</div>
+<p>Lưu ý:</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Với file bạn đã dùng lệnh&nbsp;<strong>$&nbsp;git add</strong>&nbsp;nhưng sau đó bạn sửa đổi</dt>
+<dd>nội dung của file, tập tin vẫn ở trang thái tracked nhưng sẽ được
+đưa về dạng modified và bạn không thể commit. Bạn phải sử dụng
+lệnh&nbsp;<strong>$</strong>&nbsp;<strong>git add</strong>&nbsp;một lần nữa. Tuy nhiên nếu không muốn
+dài dòng như vậy, bạn có thể dùng lệnh&nbsp;<strong>$&nbsp;git commit -a -m
+“message”</strong>&nbsp;để commit luôn, bỏ qua trạng thái modified.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Để đưa một tập tin ra khỏi staging area bạn dùng lệnh&nbsp;<a href="#id1"><span class="problematic" id="id2">**</span></a>$&nbsp;git reset</dt>
+<dd>HEAD tên-file**, để xóa file bạn dùng lệnh&nbsp;<strong>$&nbsp;rm
+file_name</strong>&nbsp;(chưa xóa hẳn khỏi ổ cứng), để xóa hẳn&nbsp;bạn dùng
+lệnh&nbsp;git&nbsp;<strong>$&nbsp;rm -f file_name</strong>.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Để xem lại chi tiết lịch sử các lần commit, bạn sử dụng</dt>
+<dd>lệnh&nbsp;<strong>$&nbsp;git log</strong>.</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Đưa tập tin sau khi commit lên Remote&nbsp;Repository trên Github</strong></p>
+<p>Bạn dùng lệnh&nbsp;<strong>$&nbsp;git push -u origin master&nbsp;**(để hiểu về master
+chúng ta sẽ nghiên cứu khái niệm&nbsp;**branch&nbsp;**trong phần tiếp theo của
+bài viết), toàn bộ các tập tin đã được commit sẽ được đưa lên Github.
+Bạn có thể được yêu cầu đăng nhập vào tài khoản Github của mình. Tiền
+tố&nbsp;**-u</strong>&nbsp;giúp Git ghi nhớ lại các thông tin truyền vào để lần kế tiếp
+bạn chỉ cần gõ&nbsp;<strong>$&nbsp;git push</strong>&nbsp;là Git sẽ tự biết phải làm gì.</p>
+<div class="line-block">
+<div class="line">$ git push -u origin master</div>
+<div class="line">Counting objects: 3, done.</div>
+<div class="line">Writing objects: 100% (3/3), 207 bytes | 0 bytes/s, done.</div>
+<div class="line">Total 3 (delta 0), reused 0 (delta 0)</div>
+<div class="line">To <a class="reference external" href="https://github.com/lucngoc/Git.git">https://github.com/lucngoc/Git.git</a></div>
+<div class="line">* [new branch] master -&gt; master</div>
+<div class="line">Branch master set up to track remote branch master from origin.</div>
+</div>
+<p>Đợi cho đến khi thông báo hoàn tất. Bạn có thể xem các file mình vừa đưa
+lên trên Github.com.</p>
+<p>LÀM VIỆC VỚI&nbsp;REMOTE REPOSITORY</p>
+<p>Giả sử như team của bạn có nhiều người làm chung một dự án và cùng đẩy
+dữ liệu lên Github. Khi có người push dữ liệu của họ lên và bạn muốn
+kiểm tra và lấy về máy mình, dùng lệnh&nbsp;<strong>$&nbsp;git pull origin master</strong></p>
+<div class="line-block">
+<div class="line">$ git pull origin master</div>
+<div class="line">From <a class="reference external" href="https://github.com/lucngoc/Git">https://github.com/lucngoc/Git</a></div>
+<div class="line">* branch master -&gt; FETCH_HEAD</div>
+<div class="line">Already up-to-date.</div>
+</div>
+<p>Pull giúp lấy toàn bộ dữ liệu trên remote repository và gộp vào brand
+hiện tại. Ngoài cách lấy dữ liệu với pull, ta còn có
+lệnh&nbsp;<strong>clone</strong>&nbsp;và&nbsp;<strong>fetch</strong>.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Lệnh**&nbsp;clone ($ git clone</dt>
+<dd>remote**_<strong>repository</strong>)**&nbsp;<a href="#id3"><span class="problematic" id="id4">**</span></a>giúp sao chép toàn bộ dữ
+liệu và&nbsp;các thiết lập trên remote repository và tự động tạo ra
+một master branch trên máy tính của bạn. Lệnh này chỉ nên sử dụng
+khi bạn cần tạo mới một&nbsp;local repository&nbsp;mới trên máy tính với
+toàn bộ dữ liệu và thiết lập của remote repository.</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Lệnh&nbsp;<strong>fetch&nbsp;**(**$ git fetch remote_repository</strong>) lấy toàn bộ</dt>
+<dd>dữ liệu từ remote repository nhưng sẽ cho phép bạn gộp thủ công
+vào một branch nào đó.</dd>
+</dl>
+</li>
+</ul>
+<p>KỸ THUẬT PHÂN NHÁNH BRANCH</p>
+<p>Ở phần trên chúng ta đã đã động đến master cùng khái niệm branch, và bay
+giờ ta sẽ tìm hiểu về chúng.</p>
+<p><a class="reference internal" href="media/image5.png"><img alt="it-08" src="media/image5.png" style="width: 6.36597in; height: 1.59573in;" /></a></p>
+<p>Khi bạn tạo một repository, mặc định bạn sẽ có một branch tên
+là&nbsp;<strong>master</strong>, kỹ thuật phân nhánh branch giúp tạo ra một hoặc nhiều
+nhánh (branch) mới, mã nguồn từ&nbsp;<strong>branch master</strong>được clone sang
+các&nbsp;<strong>branch phụ</strong>&nbsp;mới tạo ra, các thay đổi mã nguồn trên branch phụ
+không làm thay đổi mã nguồn trên nhánh chính. Việc này rất có ích khi
+bạn muốn phát triển thêm tính năng cho dự án, nếu tính năng đó gây xung
+đột bạn có thể xóa nó đi mà không làm ảnh hưởng tớ cả dự án, nếu tính
+năng đó OK, bạn có thể gộp chung vào dự án chính.</p>
+<p>Để tạo ta một branch bạn dùng lệnh&nbsp;<strong>$ git branch tên_branch</strong>, để
+xem các branch hiện có bạn dùng lệnh&nbsp;<strong>$ git branch.&nbsp;**Để bắt đầu
+làm việc với một branch nào đó, bạn dùng lệnh&nbsp;**$ git checkout
+tên_branch</strong>.&nbsp;Lúc này các lệnh add, commit, push… sẽ được thực hiện
+trên branch được checkout&nbsp;và không ảnh hưởng tới các branch khác. Kết
+thúc làm việc với một branch, để trở về branch chính, bạn lại sử dụng
+lệnh checkout&nbsp;<strong>$ git checkout master</strong>, lúc này bạn muốn gộp các thay
+đổi trên branch phụ vừa làm việc vào branch chính, bạn dùng
+lệnh&nbsp;<strong>$&nbsp;git merge tên_branch</strong>.</p>
+<p>Bạn có thể dễ hình dung hơn với vụ dụ dưới đây:</p>
+<div class="line-block">
+<div class="line">$ git branch feature</div>
+<div class="line">$&nbsp;git branch</div>
+<div class="line">feature</div>
+<div class="line">* master</div>
+<div class="line">$ git checkout feature</div>
+<div class="line">Switched to branch ‘feature’</div>
+<div class="line">$ touch dog.txt</div>
+<div class="line">$ git add dog.txt</div>
+<div class="line">$ git commit -m “Add dog.txt”</div>
+<div class="line">On branch feature</div>
+<div class="line">nothing to commit, working tree clean</div>
+<div class="line">$ git push -u origin feature</div>
+<div class="line">Total 0 (delta 0), reused 0 (delta 0)</div>
+<div class="line">To <a class="reference external" href="https://github.com/lucngoc/Git.git">https://github.com/lucngoc/Git.git</a></div>
+<div class="line">* [new branch] feature -&gt; feature</div>
+<div class="line">Branch feature set up to track remote branch feature from origin.</div>
+<div class="line">$ git checkout master</div>
+<div class="line">Switched to branch ‘master’</div>
+<div class="line">Your branch is up-to-date with ‘origin/master’.</div>
+<div class="line">$ git merge feature</div>
+<div class="line">Updating 6aeb630..6dc95bb</div>
+<div class="line">Fast-forward</div>
+<div class="line">dog.txt | 0</div>
+<div class="line">1 file changed, 0 insertions(+), 0 deletions(-)</div>
+<div class="line">create mode 100644 dog.txt</div>
+<div class="line">$ git branch -d feature</div>
+<div class="line">Deleted branch feature (was 6dc95bb)</div>
+<div class="line">$ git push</div>
+<div class="line">Total 0 (delta 0), reused 0 (delta 0)</div>
+<div class="line">To <a class="reference external" href="https://github.com/lucngoc/Git.git">https://github.com/lucngoc/Git.git</a></div>
+<div class="line">6aeb630..6dc95bb master -&gt; master</div>
+</div>
+<p>Chúng ta đã đi đến phần cuối cùng trong bài viết này, đây là các kiến
+thức cơ bản, có thể vẫn còn thiếu sót, để tìm hiểu đầy đủ&nbsp;bạn có thể
+truy cập&nbsp;<a class="reference external" href="https://git-scm.com/doc">***https://git-scm.com/doc***</a>.
+Chúc các bạn sử dụng thành thạo Git và Github.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="licence.html" class="btn btn-neutral float-right" title="License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Rokkiz’s Blog: Here is all my mess" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, rokkiz.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

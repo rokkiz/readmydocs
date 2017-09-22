@@ -1,8 +1,7 @@
-Rokkiz's Blog:
+Rokkiz's Blog: Here is all my mess
 ==================================
 
-Another simple header
-=============================
+
 
 Here is some text
 
@@ -15,6 +14,7 @@ Guide
 .. toctree::
    :maxdepth: 3
    
+   Readthedocs
    licence
    help
 
